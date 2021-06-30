@@ -41,7 +41,7 @@ func main() {
 		info, err := fs.Info()
 		var dir string
 		if err != nil {
-			log.Fatal(err)
+			log.Println(err)
 			continue
 		}
 		if info.IsDir() {
